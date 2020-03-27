@@ -1,0 +1,34 @@
+<section id="form">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <form [formGroup]="homeForm" (ngSubmit)="onSubmit()">
+  
+          <div class="col text-center">
+            <div class="form-group">
+              <!-- <input formControlName="teste" type="text"> -->
+              <label for="select-option">Qual droga você mais utiliza para se manter concentrado nas suas atividades?</label>
+              <select class="form-control" id="select-option" formControlName="option_select">
+                <option *ngFor="let option of options" [value]="option.value">
+                  {{ option.description }}
+                </option>
+              </select>
+              <span>(após enviar a resposta veja o gráfio com os resultados)</span>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col text-center">
+              <button [disabled]="homeForm.invalid"
+                      class="btn btn-primary"
+                      type="submit">
+                Enviar
+              </button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
