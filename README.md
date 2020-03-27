@@ -1,8 +1,12 @@
 # projectGraph
 simple app to display the content in a graphic
 
-first of all, to run the app you need to enter in the backend folder and run *npm start*;
+## first of all
 
-then you get back to the appGraph folder and run *ng serve --open*;
+to run the app you need to enter in the backend folder and run *npm start*;
 
-note: the app's still development, so, you can run with the inspect of your browser opened.
+## then
+you get back to the appGraph folder and run *ng serve --open*;
+
+## note
+: the app's still development, so, you can run with the inspect of your browser opened.
